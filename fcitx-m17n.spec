@@ -5,8 +5,8 @@ Name: fcitx-m17n
 Version: 0.2.0
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 8
-Source0: http://fcitx.googlecode.com/files/%{name}-%{version}.tar.xz
+Release: 9
+Source0: http://download.fcitx-im.org/%{name}/%{name}-%{version}.tar.xz
 %else
 Release: 0.%{scmrev}.1
 Source0: %{name}-%{scmrev}.tar.xz
@@ -21,7 +21,7 @@ Source0: %{name}-%{scmrev}.tar.xz
 %endif
 %endif
 Summary: M17N plugin for fcitx
-URL: http://fcitx.googlecode.com/
+URL: http://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
@@ -30,7 +30,7 @@ BuildRequires: pkgconfig(m17n-core)
 
 %track
 prog %{name} = {
-	url = http://code.google.com/p/fcitx/downloads/list
+	url = http://download.fcitx-im.org/%{name}
 	regex = %name-(__VER__)\.tar\.xz
 	version = %{version}
 }
