@@ -5,7 +5,7 @@ Name: fcitx-m17n
 Version: 0.2.0
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 9
+Release: 10
 Source0: http://download.fcitx-im.org/%{name}/%{name}-%{version}.tar.xz
 %else
 Release: 0.%{scmrev}.1
