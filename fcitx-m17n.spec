@@ -1,6 +1,6 @@
 Name: fcitx-m17n
 Version: 0.2.3
-Release: 1
+Release: 2
 Source0: http://download.fcitx-im.org/%{name}/%{name}-%{version}.tar.xz
 Summary: M17N plugin for fcitx
 URL: http://www.fcitx-im.org
@@ -9,6 +9,7 @@ Group: System/Internationalization
 BuildRequires: cmake
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(m17n-core)
+Requires: m17n-db
 
 %track
 prog %{name} = {
