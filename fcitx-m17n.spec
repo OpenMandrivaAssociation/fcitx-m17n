@@ -9,7 +9,7 @@ Group: System/Internationalization
 BuildRequires: cmake
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(m17n-core)
-Requiores: m17n-db
+Requires: m17n-db
 
 %track
 prog %{name} = {
