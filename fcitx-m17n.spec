@@ -11,13 +11,6 @@ BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(m17n-core)
 Requires: m17n-db
 
-%track
-prog %{name} = {
-	url = http://download.fcitx-im.org/%{name}
-	regex = %name-(__VER__)\.tar\.xz
-	version = %{version}
-}
-
 %description
 M17N plugin for fcitx.
 
