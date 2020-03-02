@@ -1,6 +1,6 @@
 Name: fcitx-m17n
 Version:	0.2.4
-Release: 3
+Release: 4
 Source0: http://download.fcitx-im.org/%{name}/%{name}-%{version}.tar.xz
 Summary: M17N plugin for fcitx
 URL: http://www.fcitx-im.org
@@ -19,10 +19,10 @@ M17N plugin for fcitx.
 
 %build
 %cmake
-%make
+%make_build
 
 %install
-%makeinstall_std -C build
+%make_install -C build
 %find_lang %{name}
 
 %files -f %name.lang
