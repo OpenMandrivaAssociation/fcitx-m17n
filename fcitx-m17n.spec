@@ -3,7 +3,7 @@ Version:	0.2.4
 Release: 5
 Source0: http://download.fcitx-im.org/%{name}/%{name}-%{version}.tar.xz
 Summary: M17N plugin for fcitx
-URL: http://www.fcitx-im.org
+URL: https://www.fcitx-im.org
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
